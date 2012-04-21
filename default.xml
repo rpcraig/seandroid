@@ -51,6 +51,7 @@
   
 <!-- start of Evervolv -->
   <project path="vendor/hp" name="android_vendor_hp" remote="evervolv" revision="ics"/>
+  <project path="device/htc/common" name="android_device_htc_common" remote="evervolv" revision="ics"/>
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="evervolv" revision="ics" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="evervolv" revision="ics" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="evervolv" revision="ics"/>
