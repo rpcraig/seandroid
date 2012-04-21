@@ -19,12 +19,6 @@
            sync-j="4" />
 
 <!-- start of selinuxproject -->
-  
-  <project path="external/libselinux" remote="selinuxproject" name="selinux/libselinux"/>
-  <project path="external/libsepol" remote="selinuxproject" name="selinux/libsepol"/>
-  <project path="external/checkpolicy" remote="selinuxproject" name="selinux/checkpolicy"/>
-  <project path="external/sepolicy" remote="selinuxproject" name="selinux/sepolicy"/>
-
   <project path="packages/apps/SEAndroidManager" remote="selinuxproject" name="platform/packages/apps/SEAndroidManager"/>
 
   <project path="kernel/goldfish" remote="selinuxproject" name="kernel/goldfish" revision="seandroid-goldfish-2.6.29"/>
