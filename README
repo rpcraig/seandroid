@@ -3,3 +3,9 @@ repo init -u git://github.com/rpcraig/seandroid.git
 cd kernel/msm
 make ARCH=arm seandroid_mahimahi_defconfig
 make ARCH=arm CROSS_COMPILE=../../prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+
+- Subject to Change -
+wget -O bionic/libc/kernel/common/linux/ashmem.h http://github.com/rpcraig/seandroid/raw/master/ashmem.h
+wget -O bionic/libc/kernel/common/linux/android_pmem.h http://github.com/rpcraig/seandroid/raw/master/android_pmem.h
+wget -O bionic/libc/kernel/common/linux/genlock.h http://github.com/rpcraig/seandroid/raw/master/genlock.h
+wget -O bionic/libc/kernel/common/linux/msm_mdp.h http://github.com/rpcraig/seandroid/raw/master/msm_mdp.h
