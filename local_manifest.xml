@@ -1,0 +1,82 @@
+<manifest>
+  <remote  name="selinuxproject"
+           fetch="git://git.selinuxproject.org/~seandroid" />
+
+  <remote name="evervolv"
+	  fetch="git://github.com/Evervolv/" />
+
+  <remote name="local"
+	  fetch="git://github.com/rpcraig/" />
+
+<!-- selinuxproject -->
+  <remove-project name="platform/external/libselinux"/>
+  <project path="external/libselinux" remote="selinuxproject" name="selinux/libselinux"/>
+  <remove-project name="platform/external/libsepol"/>
+  <project path="external/libsepol" remote="selinuxproject" name="selinux/libsepol"/>
+  <remove-project name="platform/external/checkpolicy"/>
+  <project path="external/checkpolicy" remote="selinuxproject" name="selinux/checkpolicy"/>
+  <remove-project name="platform/external/sepolicy"/>
+  <project path="external/sepolicy" remote="selinuxproject" name="selinux/sepolicy"/>
+  <project path="packages/apps/SEAndroidManager" remote="selinuxproject" name="platform/packages/apps/SEAndroidManager"/>
+
+  <project path="kernel/goldfish" remote="selinuxproject" name="kernel/goldfish" revision="seandroid-goldfish-2.6.29"/>
+  <project path="kernel/samsung" remote="selinuxproject" name="kernel/samsung" revision="seandroid-samsung-3.0-ics-mr1"/>
+  <project path="kernel/tegra" remote="selinuxproject" name="kernel/tegra" revision="seandroid-tegra-moto-2.6.39"/>
+  <project path="kernel/omap" remote="selinuxproject" name="kernel/omap" revision="seandroid-omap-tuna-3.0"/>
+
+  <remove-project name="platform/build"/>
+  <project path="build" remote="selinuxproject" name="platform/build" revision="seandroid">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <remove-project name="platform/dalvik"/>
+  <project path="dalvik" remote="selinuxproject" name="platform/dalvik" revision="seandroid" />
+
+  <remove-project name="platform/libcore"/>
+  <project path="libcore" remote="selinuxproject" name="platform/libcore" revision="seandroid" />
+
+  <remove-project name="platform/frameworks/base"/>
+  <project path="frameworks/base" remote="selinuxproject" name="platform/frameworks/base" revision="seandroid" />
+
+  <remove-project name="platform/system/core"/>
+  <project path="system/core" remote="selinuxproject" name="platform/system/core" revision="seandroid" />
+
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" remote="selinuxproject" name="platform/packages/apps/Settings" revision="seandroid"/>
+
+  <remove-project name="device/samsung/crespo"/>
+  <project path="device/samsung/crespo" remote="selinuxproject" name="device/samsung/crespo" revision="seandroid" />
+
+  <remove-project name="device/samsung/crespo4g"/>
+  <project path="device/samsung/crespo4g" remote="selinuxproject" name="device/samsung/crespo4g" revision="seandroid" />
+
+  <remove-project name="device/samsung/tuna"/>
+  <project path="device/samsung/tuna" remote="selinuxproject" name="device/samsung/tuna" revision="seandroid" />
+
+  <remove-project name="device/moto/wingray"/>
+  <project path="device/moto/wingray" remote="selinuxproject" name="device/moto/wingray" revision="seandroid" />
+<!-- end of selinuxproject -->
+
+<!-- start of Evervolv -->
+  <project path="vendor/htc" name="android_vendor_htc" remote="evervolv" revision="ics"/>
+  <project path="device/htc/common" name="android_device_htc_common" remote="evervolv" revision="ics"/>
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="evervolv" revision="ics" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="evervolv" revision="ics" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="evervolv" revision="ics"/>
+
+  <remove-project name="hardware/qcom/media"/>
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="evervolv" revision="ics" />
+
+  <remove-project name="hardware/qcom/gps"/>  
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="evervolv" revision="ics" />
+
+  <remove-project name="hardware/msm7k"/>
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="evervolv" revision="ics"/>
+<!-- end of Evervolv -->
+
+<!-- start of Local -->
+  <project path="device/htc/passion" name="android_device_htc_passion" remote="local" revision="ics"/>
+  <project path="kernel/msm" name="seandroid-msm-kernel" remote="local" revision="android-msm-2.6.38-ics"/>
+<!-- end of Local -->
+
+</manifest>
