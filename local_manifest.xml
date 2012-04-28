@@ -64,13 +64,13 @@
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="evervolv" revision="ics" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="evervolv" revision="ics"/>
 
-  <remove-project name="hardware/qcom/media"/>
+  <remove-project name="platform/hardware/qcom/media"/>
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="evervolv" revision="ics" />
 
-  <remove-project name="hardware/qcom/gps"/>  
+  <remove-project name="platform/hardware/qcom/gps"/>
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="evervolv" revision="ics" />
 
-  <remove-project name="hardware/msm7k"/>
+  <remove-project name="platform/hardware/msm7k"/>
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="evervolv" revision="ics"/>
 <!-- end of Evervolv -->
 
