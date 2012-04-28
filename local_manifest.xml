@@ -24,19 +24,11 @@
   <project path="kernel/tegra" remote="selinuxproject" name="kernel/tegra" revision="seandroid-tegra-moto-2.6.39"/>
   <project path="kernel/omap" remote="selinuxproject" name="kernel/omap" revision="seandroid-omap-tuna-3.0"/>
 
-  <remove-project name="platform/build"/>
-  <project path="build" remote="selinuxproject" name="platform/build" revision="seandroid">
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
   <remove-project name="platform/dalvik"/>
   <project path="dalvik" remote="selinuxproject" name="platform/dalvik" revision="seandroid" />
 
   <remove-project name="platform/libcore"/>
   <project path="libcore" remote="selinuxproject" name="platform/libcore" revision="seandroid" />
-
-  <remove-project name="platform/frameworks/base"/>
-  <project path="frameworks/base" remote="selinuxproject" name="platform/frameworks/base" revision="seandroid" />
 
   <remove-project name="platform/system/core"/>
   <project path="system/core" remote="selinuxproject" name="platform/system/core" revision="seandroid" />
@@ -77,6 +69,14 @@
 <!-- start of Local -->
   <project path="device/htc/passion" name="android_device_htc_passion" remote="local" revision="ics"/>
   <project path="kernel/msm" name="seandroid-msm-kernel" remote="local" revision="android-msm-2.6.38-ics"/>
+
+  <remove-project name="platform/build"/>
+  <project path="build" remote="local" name="platform/android_build" revision="master" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <remove-project name="platform/frameworks/base"/>
+  <project path="frameworks/base" remote="local" name="platform/android_frameworks_base" revision="master" />
 <!-- end of Local -->
 
 </manifest>
