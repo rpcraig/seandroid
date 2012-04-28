@@ -1,4 +1,6 @@
-repo init -u git://github.com/rpcraig/seandroid.git
+repo init -u https://android.googlesource.com/platform/manifest
+wget -O .repo/local_manifest.xml http://github.com/rpcraig/seandroid/raw/master/local_manifest.xml
+repo sync
 
 cd kernel/msm
 make ARCH=arm seandroid_mahimahi_defconfig
