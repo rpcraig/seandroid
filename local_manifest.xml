@@ -71,6 +71,7 @@
 <!-- start of Local -->
   <project path="device/htc/passion" name="android_device_htc_passion" remote="local" revision="ics"/>
   <project path="kernel/msm" name="seandroid-msm-kernel" remote="local" revision="android-msm-2.6.38-ics"/>
+  <project path="seandroid" name="seandroid" remote="local" revision="master"/>
 
   <remove-project name="platform/build"/>
   <project path="build" remote="local" name="android_build" revision="master" >
