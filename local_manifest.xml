@@ -71,12 +71,12 @@
   <project path="kernel/msm" name="seandroid-msm-kernel" remote="local" revision="android-msm-2.6.38-ics"/>
 
   <remove-project name="platform/build"/>
-  <project path="build" remote="local" name="platform/android_build" revision="master" >
+  <project path="build" remote="local" name="android_build" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <remove-project name="platform/frameworks/base"/>
-  <project path="frameworks/base" remote="local" name="platform/android_frameworks_base" revision="master" />
+  <project path="frameworks/base" remote="local" name="android_frameworks_base" revision="master" />
 <!-- end of Local -->
 
 </manifest>
