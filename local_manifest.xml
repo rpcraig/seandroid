@@ -66,6 +66,9 @@
 
   <remove-project name="platform/hardware/msm7k"/>
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="evervolv" revision="ics"/>
+
+  <project path="vendor/qcom/opensource/omx/mm-core" name="android_vendor_qcom_opensource_omx_mm-core" remote="evervolv" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-video" name="android_vendor_qcom_opensource_omx_mm-video" remote="evervolv" revision="ics" />
 <!-- end of Evervolv -->
 
 <!-- start of Local -->
