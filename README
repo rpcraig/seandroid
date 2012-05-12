@@ -5,3 +5,8 @@ repo sync
 cd kernel/msm
 make ARCH=arm seandroid_mahimahi_defconfig
 make ARCH=arm CROSS_COMPILE=../../prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+
+cd ../..
+. build/envsetup.sh
+lunch full_passion-userdebug
+m -j8
