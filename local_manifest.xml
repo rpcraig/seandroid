@@ -45,6 +45,12 @@
   <remove-project name="device/samsung/tuna"/>
   <project path="device/samsung/tuna" remote="selinuxproject" name="device/samsung/tuna" revision="seandroid" />
 
+  <remove-project name="device/samsung/maguro"/>
+  <project path="device/samsung/maguro" remote="selinuxproject" name="device/samsung/maguro" revision="seandroid" />
+
+  <remove-project name="device/samsung/toro"/>
+  <project path="device/samsung/toro" remote="selinuxproject" name="device/samsung/toro" revision="seandroid" />
+
   <remove-project name="device/moto/wingray"/>
   <project path="device/moto/wingray" remote="selinuxproject" name="device/moto/wingray" revision="seandroid" />
 <!-- end of selinuxproject -->
