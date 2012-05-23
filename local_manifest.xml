@@ -78,7 +78,8 @@
 <!-- end of Evervolv -->
 
 <!-- start of Local -->
-  <project path="device/htc/passion" name="android_device_htc_passion" remote="local" revision="ics"/>
+  <project path="device/htc/passion" name="android_device_htc_passion" remote="local" revision="master"/>
+  <project path="vendor/google/gapps" name="android_vendor_google_gapps" remote="local" revision="master"/>
   <project path="kernel/msm" name="tiamat-kernel-seandroid" remote="local" revision="master"/>
   <project path="seandroid" name="seandroid" remote="local" revision="master"/>
 
