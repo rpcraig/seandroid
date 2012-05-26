@@ -10,3 +10,18 @@ cd ../..
 . build/envsetup.sh
 lunch full_passion-userdebug
 m -j8
+
+In order to flash the custom seandroid images you must flash a custom HBOOT, blackrose.
+Doing this allows access to, among other things, the MTD partitions. The stock HBOOT
+gives a 145/95/196 (system/cache/data) partition layout which is too small for seandroid
+images. I have found that 200/4/232 is a good fit. The smaller cache partition is then
+dealt with in the relocate.sh script that bind mounts cache to /data/local/cache.
+Make sure you're in fastboot mode then:
+
+fastboot flash hboot seandroid/blackrose/binary/hboot_blackrose.nb0
+fastboot flash hboot seandroid/blackrose/binary/hboot_200-4-232.nb0
+fastboot reboot-bootloader
+
+If you need a different partition scheme try using the command
+BlackRose editor (then follow on screen instructions) and then
+fastboot flash that new hboot
